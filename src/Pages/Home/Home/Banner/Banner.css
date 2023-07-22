@@ -1,0 +1,14 @@
+#banner-section    .dark-overlay{
+    background: rgba(0, 0, 0, 0.386);
+    min-height: 650px;
+}
+#banner-section    .banner-inner{
+    padding-top: 250px;
+    padding-bottom: 40px;
+}
+#banner-section {
+    min-height: 620px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

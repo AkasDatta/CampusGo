@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Container, Col, Button } from 'react-bootstrap';
+import backgroundImage1 from '../../../../assets/gradution.jpg';
+import backgroundImage2 from '../../../../assets/gradution2.jpg';
+import backgroundImage3 from '../../../../assets/gradution3.jpg';
 import './Banner.css';
-import backgroundImage1 from '../../../assets/8.jpg';
-import backgroundImage2 from '../../../assets/karim-manjra-cW3nDFVpi10-unsplash.jpg';
-import backgroundImage3 from '../../../assets/2.jpg';
 
 const Banner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,18 +10,19 @@ const Banner = () => {
   const backgrounds = [backgroundImage1, backgroundImage2, backgroundImage3];
   const texts = [
     {
-      heading: 'Bring music to life!',
-      description: 'Unleash your musical talents at our prestigious music school. Experience the joy of bringing music to life!',
+      "heading": "Empower Your Future",
+      "description": "Unlock your potential and shape your future with our diverse range of academic programs and opportunities."
     },
     {
-      heading: 'Music for Everyone',
-      description: 'Discover a world of melodies and rhythms at our renowned music academy. Explore new tastes and embrace musical creativity!',
+      "heading": "Unleash Your Creativity",
+      "description": "Discover a world of creativity and innovation through our cutting-edge arts and design programs."
     },
     {
-      heading: 'Music is Your world',
-      description: 'Indulge in the harmonious journey of music. Join us to explore new tastes, refine your skills, and create unforgettable melodies.',
-    },
-  ];
+      "heading": "Pursue Knowledge",
+      "description": "Embark on a journey of intellectual growth and curiosity with our comprehensive research and academic resources."
+    }
+  ]
+  
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -37,45 +37,31 @@ const Banner = () => {
     <div>
       <section
         id="banner-section"
+        className="bg-gradient-to-r from-blue-900 to-blue-800 bg-cover bg-center min-h-[750px]"
         style={{
-          minHeight: '750px',
           backgroundImage: `url(${backgrounds[previousIndex]}), url(${backgrounds[currentIndex]})`,
-          backgroundPosition: 'center top',
-          backgroundSize: '100% 100%',
           transition: 'background-image 1s linear',
         }}
       >
         <div className="dark-overlay">
-          <div className="banner-inner">
-            <Container>
-              <Col md={{ span: 8, offset: 2 }} lg={{ span: 6, offset: 3 }} className="text-center">
-                <h1
-                  data-aos="fade-down"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500"
-                  className="fw-bold display-1"
-                  style={{ color: '#fff' }}
-                >
-                  {texts[currentIndex].heading}
-                </h1>
-                <p
-                  data-aos="fade-zoom-in"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="300"
-                  data-aos-offset="0"
-                  className="text-light"
-                >
-                  {texts[currentIndex].description}
-                </p>
-                <Button
-                  data-aos="fade-up"
-                  data-aos-duration="3000"
-                  variant="btn btn-outline-light btn-warning text-dark border-danger rounded-5 px-5 py-2"
-                >
-                  Start Learning
-                </Button>
-              </Col>
-            </Container>
+          <div className="banner-inner mx-10">
+            <div className="lg:me-96 max-w-xlt">
+              <h1
+                className="font-bold text-7xl text-white mb-5"
+              >
+                {texts[currentIndex].heading}
+              </h1>
+              <p
+                className="text-white font-bold py-5 text-xl"
+              >
+                {texts[currentIndex].description}
+              </p>
+              <button
+                className="btn bg-blue-700 hover:bg-blue-800 text-white border-blue-700 px-5 py-2"
+              >
+                Find Universitys
+              </button>
+            </div>
           </div>
         </div>
       </section>
