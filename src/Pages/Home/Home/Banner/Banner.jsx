@@ -44,10 +44,10 @@ const Banner = () => {
         }}
       >
         <div className="dark-overlay">
-          <div className="banner-inner mx-10">
+          <div className="banner-inner mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="lg:me-96 max-w-xlt">
               <h1
-                className="font-bold text-7xl text-white mb-5"
+                className="font-bold text-6xl text-white mb-5"
               >
                 {texts[currentIndex].heading}
               </h1>
@@ -59,7 +59,7 @@ const Banner = () => {
               <button
                 className="btn bg-blue-700 hover:bg-blue-800 text-white border-blue-700 px-5 py-2"
               >
-                Find Universitys
+                Find University
               </button>
             </div>
           </div>
