@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { IoMenu, IoClose } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,9 +13,11 @@ const Navbar = () => {
     <div className='bg-white shadow'>
         <nav className="p-3 md:flex md:items-center md:justify-between max-w-screen-xl mx-auto lg:px-10 overflow-x-hidden">
         <div className="flex justify-between items-center">
-            <span className="text-2xl font-[Poppins] text-blue-600 font-bold cursor-pointer">
-            campusGo
-            </span>
+            <Link to="/">
+                <span className="text-2xl font-[Poppins] text-blue-600 font-bold cursor-pointer">
+                campusGo
+                </span>
+            </Link>
 
             <span
             className="text-3xl cursor-pointer mx-2 md:hidden block"
@@ -29,25 +32,26 @@ const Navbar = () => {
             menuOpen ? 'opacity-100 top-[80px]' : 'opacity-0 top-[-400px]'
             } transition-all ease-in duration-500`}
         >
+            
             <li className="mx-2 my-6 md:my-0">
-            <a href="#" className="text-lg hover:text-blue-500 duration-500">
-                Home
-            </a>
+                <Link to="/" className="text-lg hover:text-blue-500 duration-500">
+                    Home
+                </Link>
             </li>
             <li className="mx-2 my-6 md:my-0">
-            <a href="#" className="text-lg hover:text-blue-500 duration-500">
-                Colleges
-            </a>
+                <Link to="/" className="text-lg hover:text-blue-500 duration-500">
+                    Colleges
+                </Link>
             </li>
             <li className="mx-2 my-6 md:my-0">
-            <a href="#" className="text-lg hover:text-blue-500 duration-500">
-                Admission
-            </a>
+                <Link to="/" className="text-lg hover:text-blue-500 duration-500">
+                    Admission
+                </Link>
             </li>
             <li className="mx-2 my-6 md:my-0">
-            <a href="#" className="text-lg hover:text-blue-500 duration-500">
-                My College
-            </a>
+                <Link to="/" className="text-lg hover:text-blue-500 duration-500">
+                    My College
+                </Link>
             </li>
             <div className="form-control mx-2 sm:my-5">
                 <input type="text" placeholder="Search" className="input input-bordered border-gray-300 bg-white md:w-36" />

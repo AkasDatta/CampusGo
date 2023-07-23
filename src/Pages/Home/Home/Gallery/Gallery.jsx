@@ -21,13 +21,13 @@ const Gallery = () => {
       ];
     
       useEffect(() => {
-        AOS.init(); // If using AOS animation library
+        AOS.init(); 
       }, []);
 
 
     return (
         <div className="bg-white">
-            <div className= "py-10 mx-auto max-w-screen-xl px-4 py-16 pt-24 sm:px-6 lg:px-8">
+            <div className= "mx-auto max-w-screen-xl px-4 py-16 pt-24 sm:px-6 lg:px-8">
                 <h2 className="text-3xl mb-5 text-black font-bold text-center">Experience the impact of our graduate stars.</h2>
                 <p className="text-center text-gray-700">Immerse yourself in a captivating gallery that celebrates the remarkable accomplishments and talents of our exceptional graduate students. Discover the brilliance and impact of our rising stars as they shape the future with their dedication and innovation.</p>
 

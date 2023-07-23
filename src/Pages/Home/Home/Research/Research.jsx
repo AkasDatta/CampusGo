@@ -11,7 +11,7 @@ const Research = () => {
     }, []);
 
     return (
-        <div className="py-10 mx-auto max-w-screen-xl px-4 py-16 pt-24 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-xl px-4 py-16 pt-24 sm:px-6 lg:px-8">
             <h2 className="text-blue-900 mx-1">Our Esteemed Researchers</h2>
             <h2 className="text-4xl mb-10 text-gray-700 font-bold">Research Programs</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
