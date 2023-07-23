@@ -32,7 +32,7 @@ const Gallery = () => {
                 <p className="text-center text-gray-700">Immerse yourself in a captivating gallery that celebrates the remarkable accomplishments and talents of our exceptional graduate students. Discover the brilliance and impact of our rising stars as they shape the future with their dedication and innovation.</p>
 
             <div className="container mx-auto px-4 py-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {images.map((image) => (
                     <div key={image.id} className="p-2" data-aos="zoom-in" data-aos-duration="500">
                         <div className="relative">

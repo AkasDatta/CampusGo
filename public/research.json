@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "src": "https://images.unsplash.com/photo-1588600878108-578307a3cc9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzZWFyY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "name": "Scientific Discovery Specialist",
+      "description": "An image representing a breakthrough in scientific research."
+    },
+    {
+      "id": 2,
+      "src": "https://images.unsplash.com/photo-1582005450386-52b25f82d9bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "name": "Innovative Experiments",
+      "description": "Researchers conducting innovative experiments to push boundaries."
+    },
+    {
+      "id": 3,
+      "src": "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=925&q=80",
+      "name": "Data Analysis Specialist",
+      "description": "Analyzing research data to draw meaningful conclusions."
+    },
+    {
+      "id": 4,
+      "src": "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "name": "Technological Advancement",
+      "description": "Showcasing the latest technological advancements in research."
+    },
+    {
+      "id": 5,
+      "src": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=852&q=80",
+      "name": "Academic Publication",
+      "description": "Celebrating the successful publication of research work."
+    },
+    {
+      "id": 6,
+      "src": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=891&q=80",
+      "name": "Collaborative Research",
+      "description": "Researchers collaborating to solve complex problems together."
+    },
+    {
+      "id": 7,
+      "src": "https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=893&q=80",
+      "name": "Biomedical Breakthrough",
+      "description": "A significant breakthrough in the field of biomedical research."
+    },
+    {
+      "id": 8,
+      "src": "https://images.unsplash.com/photo-1581093577421-f561a654a353?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "name": "Environmental Impact",
+      "description": "Research focused on creating a positive impact on the environment."
+    }
+  ]
+  
+
+
+
+
+
+
+
+
+
+
+
+
