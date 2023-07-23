@@ -1,50 +1,80 @@
 [
   {
+    "id": "1",
     "collegeName": "University of Oxford",
     "collegeImage": "https://images.pexels.com/photos/5624130/pexels-photo-5624130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "admissionDates": ["2023-09-01"],
-    "events": ["Annual Cultural Fest"],
-    "sports": ["Football"],
-    "researchHistory": 1200
+    "admissionDates": ["2023-09-01 and ", "2023-09-15"],
+    "admissionProcess": "Online application and entrance exam",
+    "events": ["Annual Cultural Fest, ", "Science Exhibition, ", "Literary Meet"],
+    "eventsDetails": "Date: October 15th to October 20th",
+    "sports": ["Football, ", "Basketball, ", "Badminton"],
+    "sportsCategories": "Men's Football, Women's Football, Men's Basketball, Women's Basketball, Men's Badminton, Women's Badminton",
+    "researchHistory": 1200,
+    "researchWorks": "1200 research publications on various topics"
   },
   {
+    "id": "2",
     "collegeName": "Dhaka University",
     "collegeImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    "admissionDates": ["2023-08-15"],
-    "events": ["Science Symposium"],
-    "sports": ["Tennis"],
-    "researchHistory": 850
+    "admissionDates": ["2023-08-15 and ", "2023-08-30"],
+    "admissionProcess": "Written admission test and interview",
+    "events": ["Science Symposium, ", "Tech Expo, ", "Art Festival"],
+    "eventsDetails": "Date: September 25th to September 30th",
+    "sports": ["Tennis, ", "Football, ", "Volleyball"],
+    "sportsCategories": "Men's Tennis, Women's Tennis, Men's Football, Women's Football, Men's Volleyball, Women's Volleyball",
+    "researchHistory": 850,
+    "researchWorks": "850 research papers published in international journals"
   },
   {
+    "id": "3",
     "collegeName": "Turkish University",
     "collegeImage": "https://images.pexels.com/photos/17113078/pexels-photo-17113078/free-photo-of-patio-of-double-minaret-madras-in-erzurum.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "admissionDates": ["2023-09-05"],
-    "events": ["Tech Summit"],
-    "sports": ["Badminton"],
-    "researchHistory": 1600
+    "admissionDates": ["2023-09-05 and ", "2023-09-20"],
+    "admissionProcess": "Admission test and interview",
+    "events": ["Tech Summit, ", "Cultural Gala, ", "Business Conclave"],
+    "eventsDetails": "Date: November 5th to November 10th",
+    "sports": ["Badminton, ", "Tennis, ", "Swimming"],
+    "sportsCategories": "Men's Badminton, Women's Badminton, Men's Tennis, Women's Tennis, Men's Swimming, Women's Swimming",
+    "researchHistory": 1600,
+    "researchWorks": "1600 research projects completed in the last year"
   },
   {
+    "id": "4",
     "collegeName": "Harvard University",
     "collegeImage": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    "admissionDates": ["2023-08-30"],
-    "events": ["Music Festival"],
-    "sports": ["Hockey"],
-    "researchHistory": 1100
+    "admissionDates": ["2023-08-30 and ", "2023-09-10"],
+    "admissionProcess": "Common Application and supplementary materials",
+    "events": ["Music Festival, ", "Science Fair, ", "Sports Meet"],
+    "eventsDetails": "Date: July 20th to July 25th",
+    "sports": ["Hockey, ", "Soccer, ", "Track and Field"],
+    "sportsCategories": "Men's Hockey, Women's Hockey, Men's Soccer, Women's Soccer, Men's Track and Field, Women's Track and Field",
+    "researchHistory": 1100,
+    "researchWorks": "1100 ongoing research projects across various disciplines"
   },
   {
-    "collegeName": "Stanford College",
+    "id": "5",
+    "collegeName": "Stanford University",
     "collegeImage": "https://images.unsplash.com/photo-1596967082890-810f0f4cf634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
-    "admissionDates": ["2023-09-10"],
-    "events": ["Coding Competition"],
-    "sports": ["Chess"],
-    "researchHistory": 920
+    "admissionDates": ["2023-09-10 and ", "2023-09-25"],
+    "admissionProcess": "Standardized test scores and application essays",
+    "events": ["Coding Competition, ", "Hackathon, ", "Literary Festival"],
+    "eventsDetails": "Date: March 10th to March 15th",
+    "sports": ["Chess, ", "Basketball, ", "Volleyball"],
+    "sportsCategories": "Men's Chess, Women's Chess, Men's Basketball, Women's Basketball, Men's Volleyball, Women's Volleyball",
+    "researchHistory": 920,
+    "researchWorks": "920 published research papers in the last academic year"
   },
   {
+    "id": "6",
     "collegeName": "University of Cambridge",
     "collegeImage": "https://images.unsplash.com/photo-1617297296495-4af2290c2b84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80",
-    "admissionDates": ["2023-08-25"],
-    "events": ["Robotics Expo"],
-    "sports": ["Cycling"],
-    "researchHistory": 1450
+    "admissionDates": ["2023-08-25 and ", "2023-09-05"],
+    "admissionProcess": "Admission test and interview",
+    "events": ["Robotics Expo, ", "Art Exhibition, ", "Debate Competition"],
+    "eventsDetails": "Date: October 5th to October 10th",
+    "sports": ["Cycling, ", "Tennis, ", "Football"],
+    "sportsCategories": "Men's Cycling, Women's Cycling, Men's Tennis, Women's Tennis, Men's Football, Women's Football",
+    "researchHistory": 1450,
+    "researchWorks": "1450 research projects in collaboration with industry partners"
   }
 ]

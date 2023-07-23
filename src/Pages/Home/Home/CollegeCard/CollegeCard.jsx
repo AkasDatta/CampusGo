@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import signiture from "../../../../assets/signiture.png";
+import { Link } from "react-router-dom";
 
 const CollegeCard = () => {
   const [categories, setCategories] = useState([]);
@@ -43,9 +44,11 @@ const CollegeCard = () => {
                     <p><b>Research History:</b> {college.researchHistory}</p>
                     <p><b>Sports:</b> {college.sports}</p>
                     <div className="card-actions">
+                    <Link to={{ pathname: `/college/${college.id}`, state: { college } }}>
                       <button className="btn btn-ghost text-blue-600 border-b-4 px-6 border-blue-700 hover:bg-gray hover:text-blue-600">
                         Details
                       </button>
+                    </Link>
                     </div>
                   </div>
                 </div>
