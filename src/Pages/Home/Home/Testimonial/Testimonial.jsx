@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import rating1 from "../../../../assets/logo/rating5.png"
+import rating2 from "../../../../assets/logo/rating4.png"
+import rating3 from "../../../../assets/logo/rating2.png"
 
 const Testimonial = () => {
   useEffect(() => {
@@ -53,17 +55,14 @@ const Testimonial = () => {
                   <blockquote className="flex h-full flex-col justify-between bg-white p-12">
                     <div>
                       <div className="flex gap-0.5 text-green-500">
-                        {/* Stars or other icons */}
+                       <img className='w-32' src={rating2} alt="" />
                       </div>
 
                       <div className="mt-4">
-                        <p className="text-2xl font-bold text-pink-600 sm:text-3xl">Stayin' Alive</p>
+                        <p className="text-2xl font-bold text-pink-600 sm:text-3xl">Life-changing experience!</p>
 
                         <p className="mt-4 leading-relaxed text-gray-500">
-                          No, Rose, they are not breathing. And they have no arms or legs…
-                          Where are they? You know what? If we come across somebody
-                          with no arms or legs, do we bother resuscitating them? I mean,
-                          what quality of life do we have there?
+                        I couldn't have asked for a better platform to research universities. The website's ratings and reviews from real students provided valuable insights into campus life and academics. It gave me the confidence to choose the perfect university that aligned with my interests and aspirations.
                         </p>
                       </div>
                     </div>
@@ -77,22 +76,19 @@ const Testimonial = () => {
                   <blockquote className="flex h-full flex-col justify-between bg-white p-12">
                     <div>
                       <div className="flex gap-0.5 text-green-500">
-                        {/* Stars or other icons */}
+                      <img className='w-32' src={rating1} alt="" />
                       </div>
 
                       <div className="mt-4">
-                        <p className="text-2xl font-bold text-pink-600 sm:text-3xl">Stayin' Alive</p>
+                        <p className="text-2xl font-bold text-pink-600 sm:text-3xl">Highly recommended!</p>
 
                         <p className="mt-4 leading-relaxed text-gray-500">
-                          No, Rose, they are not breathing. And they have no arms or legs…
-                          Where are they? You know what? If we come across somebody
-                          with no arms or legs, do we bother resuscitating them? I mean,
-                          what quality of life do we have there?
+                        This website saved me so much time and effort in my university search. With a wide range of universities listed and comprehensive details about each, I was able to compare and find the best fit for my goals. Thank you for making the process stress-free and efficient!
                         </p>
                       </div>
                     </div>
 
-                    <footer className="mt-8 text-sm text-gray-500">&mdash; Michael Scott</footer>
+                    <footer className="mt-8 text-sm text-gray-500">&mdash; John Roberts</footer>
                   </blockquote>
                 </div>
 
@@ -101,22 +97,19 @@ const Testimonial = () => {
                   <blockquote className="flex h-full flex-col justify-between bg-white p-12">
                     <div>
                       <div className="flex gap-0.5 text-green-500">
-                        {/* Stars or other icons */}
+                        <img className='w-32' src={rating3} alt="" />
                       </div>
 
                       <div className="mt-4">
-                        <p className="text-2xl font-bold text-pink-600 sm:text-3xl">Stayin' Alive</p>
+                        <p className="text-2xl font-bold text-pink-600 sm:text-3xl">Truly impressed!</p>
 
                         <p className="mt-4 leading-relaxed text-gray-500">
-                          No, Rose, they are not breathing. And they have no arms or legs…
-                          Where are they? You know what? If we come across somebody
-                          with no arms or legs, do we bother resuscitating them? I mean,
-                          what quality of life do we have there?
+                        I had an amazing experience using this website to explore different universities. The user-friendly interface made it easy to find all the information I needed. I highly recommend it to anyone looking to make informed decisions about their educational journey!
                         </p>
                       </div>
                     </div>
 
-                    <footer className="mt-8 text-sm text-gray-500">&mdash; Michael Scott</footer>
+                    <footer className="mt-8 text-sm text-gray-500">&mdash; Emily Thompson</footer>
                   </blockquote>
                 </div>
               </div>
