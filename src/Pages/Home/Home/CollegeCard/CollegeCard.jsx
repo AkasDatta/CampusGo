@@ -26,7 +26,7 @@ const CollegeCard = () => {
         </div>
 
         <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {categories.map((college, index) => (
               <div key={index} className="col">
                 <div className="card h-full rounded-lg">

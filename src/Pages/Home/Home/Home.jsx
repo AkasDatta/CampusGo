@@ -3,6 +3,10 @@ import BannerCard from "./BannerCard/BannerCard";
 import CollegeCard from "./CollegeCard/CollegeCard";
 import Gallery from "./Gallery/Gallery";
 import Research from "./Research/Research";
+import Testimonial from "./Testimonial/Testimonial";
+import CollegeLogo from "./CollegeLogo/CollegeLogo";
+
+
 
 const Home = () => {
     return (
@@ -12,6 +16,8 @@ const Home = () => {
             <CollegeCard></CollegeCard>
             <Gallery></Gallery>
             <Research></Research>
+            <Testimonial></Testimonial>
+            <CollegeLogo></CollegeLogo>
         </div>
     );
 };
