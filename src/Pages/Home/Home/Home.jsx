@@ -5,6 +5,7 @@ import Gallery from "./Gallery/Gallery";
 import Research from "./Research/Research";
 import Testimonial from "./Testimonial/Testimonial";
 import CollegeLogo from "./CollegeLogo/CollegeLogo";
+import LatestNews from "./LatestNews/LatestNews";
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
             <Research></Research>
             <CollegeLogo></CollegeLogo>
             <Testimonial></Testimonial>
+            <LatestNews></LatestNews>
         </div>
     );
 };
