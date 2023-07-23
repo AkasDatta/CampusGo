@@ -25,7 +25,7 @@ const Navbar = () => {
         </div>
 
         <ul
-            className={`md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 ${
+            className={`md:flex md:items-center z-[+1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 ${
             menuOpen ? 'opacity-100 top-[80px]' : 'opacity-0 top-[-400px]'
             } transition-all ease-in duration-500`}
         >
@@ -49,7 +49,7 @@ const Navbar = () => {
                 My College
             </a>
             </li>
-            <div className="form-control mx-2 sm:y-5">
+            <div className="form-control mx-2 sm:my-5">
                 <input type="text" placeholder="Search" className="input input-bordered border-gray-300 bg-white md:w-36" />
             </div>
             <button className="bg-blue-600 text-white font-[Poppins] duration-500 px-6 py-2 hover:bg-blue-700 rounded">

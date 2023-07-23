@@ -6,7 +6,7 @@ import { MdOutlineLibraryBooks } from "react-icons/md";
 const BannerCard = () => {
     return (
       <div className="shadow-lg">
-        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="text-black grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="col-span-1">

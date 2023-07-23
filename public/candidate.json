@@ -1,0 +1,75 @@
+[
+    {
+      "candidateName": "John Doe",
+      "subject": "Software Engineering",
+      "candidateEmail": "john.doe@example.com",
+      "candidatePhoneNumber": "+1 (555) 123-4567",
+      "address": "123 Main Street, City, Country",
+      "dateOfBirth": "1990-05-15",
+      "image": "https://example.com/john-doe-image.jpg"
+    },
+    {
+      "candidateName": "Jane Smith",
+      "subject": "Data Science",
+      "candidateEmail": "jane.smith@example.com",
+      "candidatePhoneNumber": "+1 (555) 987-6543",
+      "address": "456 Elm Street, Town, Country",
+      "dateOfBirth": "1995-08-20",
+      "image": "https://example.com/jane-smith-image.jpg"
+    },
+    {
+      "candidateName": "Michael Johnson",
+      "subject": "Mechanical Engineering",
+      "candidateEmail": "michael.johnson@example.com",
+      "candidatePhoneNumber": "+1 (555) 567-8901",
+      "address": "789 Oak Avenue, Village, Country",
+      "dateOfBirth": "1988-12-10",
+      "image": "https://example.com/michael-johnson-image.jpg"
+    },
+    {
+      "candidateName": "Emily Lee",
+      "subject": "Art and Design",
+      "candidateEmail": "emily.lee@example.com",
+      "candidatePhoneNumber": "+1 (555) 222-3333",
+      "address": "101 Pine Road, City, Country",
+      "dateOfBirth": "1992-04-25",
+      "image": "https://example.com/emily-lee-image.jpg"
+    },
+    {
+      "candidateName": "William Brown",
+      "subject": "Business Administration",
+      "candidateEmail": "william.brown@example.com",
+      "candidatePhoneNumber": "+1 (555) 444-5555",
+      "address": "222 Cedar Lane, Town, Country",
+      "dateOfBirth": "1991-07-12",
+      "image": "https://example.com/william-brown-image.jpg"
+    },
+    {
+      "candidateName": "Olivia Wilson",
+      "subject": "Environmental Science",
+      "candidateEmail": "olivia.wilson@example.com",
+      "candidatePhoneNumber": "+1 (555) 777-8888",
+      "address": "333 Maple Street, Village, Country",
+      "dateOfBirth": "1994-11-30",
+      "image": "https://example.com/olivia-wilson-image.jpg"
+    },
+    {
+      "candidateName": "James Taylor",
+      "subject": "Psychology",
+      "candidateEmail": "james.taylor@example.com",
+      "candidatePhoneNumber": "+1 (555) 111-2222",
+      "address": "444 Oak Street, City, Country",
+      "dateOfBirth": "1993-03-18",
+      "image": "https://example.com/james-taylor-image.jpg"
+    },
+    {
+      "candidateName": "Sophia Martinez",
+      "subject": "Electrical Engineering",
+      "candidateEmail": "sophia.martinez@example.com",
+      "candidatePhoneNumber": "+1 (555) 999-8888",
+      "address": "555 Elm Road, Town, Country",
+      "dateOfBirth": "1996-09-05",
+      "image": "https://example.com/sophia-martinez-image.jpg"
+    }
+  ]
+  

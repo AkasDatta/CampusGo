@@ -1,0 +1,50 @@
+[
+  {
+    "collegeName": "University of Oxford",
+    "collegeImage": "https://images.pexels.com/photos/5624130/pexels-photo-5624130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "admissionDates": ["2023-09-01"],
+    "events": ["Annual Cultural Fest"],
+    "sports": ["Football"],
+    "researchHistory": 1200
+  },
+  {
+    "collegeName": "Dhaka University",
+    "collegeImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "admissionDates": ["2023-08-15"],
+    "events": ["Science Symposium"],
+    "sports": ["Tennis"],
+    "researchHistory": 850
+  },
+  {
+    "collegeName": "Turkish University",
+    "collegeImage": "https://images.pexels.com/photos/17113078/pexels-photo-17113078/free-photo-of-patio-of-double-minaret-madras-in-erzurum.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "admissionDates": ["2023-09-05"],
+    "events": ["Tech Summit"],
+    "sports": ["Badminton"],
+    "researchHistory": 1600
+  },
+  {
+    "collegeName": "Harvard University",
+    "collegeImage": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "admissionDates": ["2023-08-30"],
+    "events": ["Music Festival"],
+    "sports": ["Hockey"],
+    "researchHistory": 1100
+  },
+  {
+    "collegeName": "Stanford College",
+    "collegeImage": "https://images.unsplash.com/photo-1596967082890-810f0f4cf634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+    "admissionDates": ["2023-09-10"],
+    "events": ["Coding Competition"],
+    "sports": ["Chess"],
+    "researchHistory": 920
+  },
+  {
+    "collegeName": "University of Cambridge",
+    "collegeImage": "https://images.unsplash.com/photo-1617297296495-4af2290c2b84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80",
+    "admissionDates": ["2023-08-25"],
+    "events": ["Robotics Expo"],
+    "sports": ["Cycling"],
+    "researchHistory": 1450
+  }
+]
