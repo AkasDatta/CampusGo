@@ -1,6 +1,7 @@
 import Banner from "./Banner/Banner";
 import BannerCard from "./BannerCard/BannerCard";
 import CollegeCard from "./CollegeCard/CollegeCard";
+import Gallery from "./Gallery/Gallery";
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <Banner></Banner>
             <BannerCard></BannerCard>
             <CollegeCard></CollegeCard>
+            <Gallery></Gallery>
         </div>
     );
 };
