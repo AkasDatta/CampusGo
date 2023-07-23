@@ -16,8 +16,8 @@ const Home = () => {
             <CollegeCard></CollegeCard>
             <Gallery></Gallery>
             <Research></Research>
-            <Testimonial></Testimonial>
             <CollegeLogo></CollegeLogo>
+            <Testimonial></Testimonial>
         </div>
     );
 };
