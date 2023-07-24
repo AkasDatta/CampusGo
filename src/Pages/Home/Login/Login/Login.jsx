@@ -1,10 +1,10 @@
-import { useContext, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./Login.css";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../../../Provider/AuthProvider';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { getAuth, sendPasswordResetEmail } from 'firebase/auth';
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -14,27 +14,53 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || '/';
+  const auth = getAuth();
+  const emailRef = useRef();
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors }
-  } = useForm();
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
 
-  const onSubmit = data => {
-    signIn(data.email, data.password)
-      .then(result => {
+       // validate
+       if (!/(?=.*[A-Z])/.test(password)) {
+        setError('Please add at least one uppercase letter.');
+        return;
+      } else if (password.length < 6) {
+        setError('Please add at least 6 characters in your password.');
+        return;
+      }
+
+      signIn(email, password)
+      .then((result) => {
         const loggedUser = result.user;
         console.log(loggedUser);
         navigate(from, { replace: true });
         setError('');
-        setSuccess('User has been logged in successfully');
+        setSuccess('User has been logged in successfully.');
       })
-      .catch(error => {
-        setError('Failed to log in. Please check your credentials.');
-        console.error(error);
+      .catch((error) => {
+        console.log(error);
       });
   };
+
+  const handleResetPassword = event => {
+    console.log(event);
+    const email = emailRef.current.value;
+    if (!email){
+        alert('Please provide your email address to reset password')
+        return;
+    }
+    sendPasswordResetEmail(auth, email)
+    .then(() => {
+        alert('Please check your email')
+    })
+    .catch(error => {
+        console.log(error);
+        setError(error.message)
+    })
+  }
 
 
 
@@ -49,48 +75,31 @@ const Login = () => {
                 <h1 className="text-2xl font-semibold text-gray-600">Login Form with Floating Labels</h1>
               </div>
                 <SocialLogin></SocialLogin>
-              <form onSubmit={handleSubmit(onSubmit)} className="divide-y divide-gray-200">
+              <form onSubmit={handleLogin} className="divide-y divide-gray-200">
                 <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
                   <div className="relative">
                     <input
-                      autoComplete="off"
                       type="email"
                       name="email"
-                      {...register("email", {
-                        required: 'Email is required',
-                        pattern: {
-                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                          message: 'Invalid email address'
-                        }
-                      })}
+                   
                       className="peer h-10 w-full border-b-2 border-gray-300 bg-white text-black focus:outline-none focus:border-rose-600"
-                      placeholder="Email address"
+                      placeholder="Email address" required
                     />
-                    {errors.email && <p className="text-red-700 text-sm">{errors.email.message}</p>}
+        
                   </div>
                   <div className="relative">
                     <input
-                      autoComplete="off"
                       type={show ? "text" : "password"}
                       name="password"
-                      {...register("password", {
-                        required: 'Password is required',
-                        minLength: {
-                          value: 6,
-                          message: 'Password must be at least 6 characters'
-                        },
-                        pattern: {
-                          value: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
-                          message: 'Password must have one uppercase, one lowercase, and one special character'
-                        }
-                      })}
                       className="peer h-10 w-full border-b-2 border-gray-300 bg-white text-black focus:outline-none focus:border-rose-600"
                       placeholder="Password"
                     />
-                    <p onClick={() => setShow(!show)}>
-                      {show ? <FaEye className="FaEye my-2" /> : <FaEyeSlash className="FaEye my-2" />}
-                    </p>
-                    {errors.password && <p className="text-red-700 text-sm">{errors.password.message}</p>}
+                     <span className='absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer mt-2'
+                        onClick={() => setShow(!show)}>
+                        {show ? <FaEye className='FaEye mb-12' /> : <FaEyeSlash className='FaEye mb-12' />}
+                    </span>
+
+                    <p className='text-sm my-3'>Forget Password? <Link className='underline text-blue-700' onClick={handleResetPassword}>Reset</Link> </p>
                   </div>
                   <div className='text-sm my-3'>
                     <p className="text-green-700">{success}</p>

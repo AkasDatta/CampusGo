@@ -151,8 +151,8 @@ const Registration = () => {
                 Register Now
               </button>
               <br />
-                {success && <p className='text-success mt-4'>{success}</p>}
-                {error && <p className='text-danger mt-4'>{error}</p>}
+                {success && <p className='text-green-600 mt-4'>{success}</p>}
+                {error && <p className='text-red-600 mt-4'>{error}</p>}
 
               <p className='text-sm font-light text-gray-500 dark:text-gray-400'>
                 Already have an account? <Link to='/login' className='font-medium text-primary-600 hover:underline dark:text-primary-500'>Login here</Link>
