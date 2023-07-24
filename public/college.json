@@ -10,7 +10,8 @@
     "sports": ["Football, ", "Basketball, ", "Badminton"],
     "sportsCategories": "Men's Football, Women's Football, Men's Basketball, Women's Basketball, Men's Badminton, Women's Badminton",
     "researchHistory": 1200,
-    "researchWorks": "1200 research publications on various topics"
+    "researchWorks": "1200 research publications on various topics",
+    "rating": 4.8
   },
   {
     "id": "2",
@@ -23,7 +24,8 @@
     "sports": ["Tennis, ", "Football, ", "Volleyball"],
     "sportsCategories": "Men's Tennis, Women's Tennis, Men's Football, Women's Football, Men's Volleyball, Women's Volleyball",
     "researchHistory": 850,
-    "researchWorks": "850 research papers published in international journals"
+    "researchWorks": "850 research papers published in international journals",
+    "rating": 4.5
   },
   {
     "id": "3",
@@ -36,7 +38,8 @@
     "sports": ["Badminton, ", "Tennis, ", "Swimming"],
     "sportsCategories": "Men's Badminton, Women's Badminton, Men's Tennis, Women's Tennis, Men's Swimming, Women's Swimming",
     "researchHistory": 1600,
-    "researchWorks": "1600 research projects completed in the last year"
+    "researchWorks": "1600 research projects completed in the last year",
+    "rating": 4.7
   },
   {
     "id": "4",
@@ -49,7 +52,8 @@
     "sports": ["Hockey, ", "Soccer, ", "Track and Field"],
     "sportsCategories": "Men's Hockey, Women's Hockey, Men's Soccer, Women's Soccer, Men's Track and Field, Women's Track and Field",
     "researchHistory": 1100,
-    "researchWorks": "1100 ongoing research projects across various disciplines"
+    "researchWorks": "1100 ongoing research projects across various disciplines",
+    "rating": 4.9
   },
   {
     "id": "5",
@@ -62,7 +66,8 @@
     "sports": ["Chess, ", "Basketball, ", "Volleyball"],
     "sportsCategories": "Men's Chess, Women's Chess, Men's Basketball, Women's Basketball, Men's Volleyball, Women's Volleyball",
     "researchHistory": 920,
-    "researchWorks": "920 published research papers in the last academic year"
+    "researchWorks": "920 published research papers in the last academic year",
+    "rating": 4.7
   },
   {
     "id": "6",
@@ -75,6 +80,7 @@
     "sports": ["Cycling, ", "Tennis, ", "Football"],
     "sportsCategories": "Men's Cycling, Women's Cycling, Men's Tennis, Women's Tennis, Men's Football, Women's Football",
     "researchHistory": 1450,
-    "researchWorks": "1450 research projects in collaboration with industry partners"
+    "researchWorks": "1450 research projects in collaboration with industry partners",
+    "rating": 4.8
   }
 ]

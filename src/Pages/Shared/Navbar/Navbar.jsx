@@ -65,7 +65,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="mx-2 my-3 md:my-0">
-            <Link to="/" className="text-sm text-gray-600 hover:text-blue-600 duration-600">
+            <Link to="/colleges" className="text-sm text-gray-600 hover:text-blue-600 duration-600">
               Colleges
             </Link>
           </li>
@@ -89,6 +89,15 @@ const Navbar = () => {
                 <span>Loading...</span>
               ) : (
                 <img className="navbar-img w-10 h-10 rounded-full" src={user.photoURL} alt="" />
+              )}
+            </li>
+          )}
+          {user && (
+            <li className="m-2 text-sm">
+              {photoLoading ? (
+                <span>Loading...</span>
+              ) : (
+                <span className="text-black">{user.displayName}</span>
               )}
             </li>
           )}
