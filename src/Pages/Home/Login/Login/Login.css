@@ -4,9 +4,9 @@
     justify-content: center;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid blue;
+    border: 1px solid gray;
     text-decoration: none;
-    color: #555;
+    color: rgb(131, 131, 131);
     font-size: 13px;
     margin: 20px 0;
   }
