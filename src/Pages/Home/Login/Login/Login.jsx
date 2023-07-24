@@ -1,15 +1,14 @@
 import { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import googleImage from '../../../../assets/logo/google.png';
-import gitHubImage from '../../../../assets/logo/gitHub.png';
 import "./Login.css";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../../../Provider/AuthProvider';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
   const [show, setShow] = useState(false);
-  const { signIn, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
+  const { signIn } = useContext(AuthContext);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const navigate = useNavigate();
@@ -23,8 +22,6 @@ const Login = () => {
   } = useForm();
 
   const onSubmit = data => {
-    // Validate the data (if needed)
-    // Call the signIn function to authenticate the user
     signIn(data.email, data.password)
       .then(result => {
         const loggedUser = result.user;
@@ -39,33 +36,7 @@ const Login = () => {
       });
   };
 
-  const handleGoogleSignIn = () => {
-    signInWithGoogle()
-      .then(result => {
-        const loggedUser = result.user;
-        navigate(from, { replace: true });
-        console.log(loggedUser);
-        setError('');
-        setSuccess('User has been logged in successfully');
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  };
 
-  const handleGitHubSignIn = () => {
-    signInWithGithub()
-      .then(result => {
-        const user = result.user;
-        navigate(from, { replace: true });
-        console.log(user);
-        setError('');
-        setSuccess('User has been logged in successfully');
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  };
 
   return (
     <div>
@@ -77,12 +48,7 @@ const Login = () => {
               <div>
                 <h1 className="text-2xl font-semibold">Login Form with Floating Labels</h1>
               </div>
-              <a onClick={handleGoogleSignIn} href="#" className="google-link">
-                <img src={googleImage} alt="Google" />Continue with Google
-              </a>
-              <a onClick={handleGitHubSignIn} href="#" className="google-link">
-                <img src={gitHubImage} alt="GitHub" />Continue with GitHub
-              </a>
+                <SocialLogin></SocialLogin>
               <form onSubmit={handleSubmit(onSubmit)} className="divide-y divide-gray-200">
                 <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
                   <div className="relative">
