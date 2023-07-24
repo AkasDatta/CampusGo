@@ -56,9 +56,11 @@ const Navbar = () => {
             <div className="form-control mx-2 sm:my-5">
                 <input type="text" placeholder="Search" className="input input-bordered border-gray-300 bg-white md:w-36" />
             </div>
-            <button className="bg-blue-600 text-white font-[Poppins] duration-500 px-6 py-2 hover:bg-blue-700 rounded">
-            Login
-            </button>
+            <Link to="/login">
+                <button className="bg-blue-600 text-white font-[Poppins] duration-500 px-6 py-2 hover:bg-blue-700 rounded">
+                Login
+                </button>
+            </Link>
         </ul>
         </nav>
     </div>
