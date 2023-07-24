@@ -7,7 +7,7 @@ const Colleges = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch('college.json')
+    fetch('http://localhost:5000/college')
       .then(res => res.json())
       .then(data => setCategories(data))
       .catch(error => console.log(error))
@@ -48,7 +48,7 @@ const Colleges = () => {
                       </p>
                       <p><b>Research History:</b> {college.researchHistory}</p>
                       <div className="card-actions">
-                      <Link to={{ pathname: `/colleges/${college.id}`, state: { college } }}>
+                      <Link to={{ pathname: `/colleges/${college._id}`, state: { college } }}>
                         <button className="btn btn-ghost text-blue-600 border-b-4 px-6 border-blue-700 hover:bg-gray hover:text-blue-600">
                           Details
                         </button>

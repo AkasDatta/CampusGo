@@ -23,12 +23,12 @@ export const router = createBrowserRouter([
           {
             path: '/college/:id',
             element: <CollegeDetails></CollegeDetails>,
-            loader: () => fetch('../college.json')
+            loader: () => fetch(`http://localhost:5000/college`)
           },
           {
             path: '/colleges/:id',
             element: <CollegeSports></CollegeSports>,
-            loader: () => fetch('../college.json')
+            loader: () => fetch('http://localhost:5000/college')
           },
           {
             path: '/login',

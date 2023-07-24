@@ -3,8 +3,8 @@ import { useLoaderData, useParams } from 'react-router-dom';
 const CollegeDetails = () => {
     const colleges = useLoaderData();
     const { id } = useParams();
-    const college = colleges.find(item => item.id === id);
-    console.log((college));
+    const college = colleges.find(item => item._id === id);
+    console.log(college);
 
 
     return (

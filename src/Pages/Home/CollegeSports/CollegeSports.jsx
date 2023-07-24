@@ -3,7 +3,8 @@ import { useLoaderData, useParams } from 'react-router-dom';
 const CollegeSports = () => {
 const colleges = useLoaderData();
 const { id } = useParams();
-const college = colleges.find(item => item.id === id);
+const college = colleges.find(item => item._id === id);
+console.log(colleges);
 
     return (
         <div className='mx-auto max-w-screen-xl py-8 sm:px-6 lg:px-8 my-24'>

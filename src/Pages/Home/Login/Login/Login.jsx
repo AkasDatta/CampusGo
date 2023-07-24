@@ -23,13 +23,13 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-       // validate
-       if (!/(?=.*[A-Z])/.test(password)) {
-        setError('Please add at least one uppercase letter.');
-        return;
-      } else if (password.length < 6) {
+    // validate
+       if (password.length < 6) {
         setError('Please add at least 6 characters in your password.');
         return;
+      } else if (!/(?=.*[A-Z])/.test(password)) {
+          setError('Please add at least one uppercase letter.');
+          return;
       }
 
       signIn(email, password)
@@ -42,11 +42,11 @@ const Login = () => {
       })
       .catch((error) => {
         console.log(error);
+        setError(error.message);
       });
   };
 
-  const handleResetPassword = event => {
-    console.log(event);
+  const handleResetPassword = () => {
     const email = emailRef.current.value;
     if (!email){
         alert('Please provide your email address to reset password')
@@ -82,6 +82,7 @@ const Login = () => {
                       type="email"
                       name="email"
                    
+                      ref={emailRef}
                       className="peer h-10 w-full border-b-2 border-gray-300 bg-white text-black focus:outline-none focus:border-rose-600"
                       placeholder="Email address" required
                     />
@@ -99,7 +100,10 @@ const Login = () => {
                         {show ? <FaEye className='FaEye mb-12' /> : <FaEyeSlash className='FaEye mb-12' />}
                     </span>
 
-                    <p className='text-sm my-3'>Forget Password? <Link className='underline text-blue-700' onClick={handleResetPassword}>Reset</Link> </p>
+                    
+
+
+
                   </div>
                   <div className='text-sm my-3'>
                     <p className="text-green-700">{success}</p>
@@ -116,6 +120,7 @@ const Login = () => {
                     <span className='text-sm text-gray-700'>Don't Have an Account? <Link className='text-blue-700 underline' to="/registration">Register</Link></span>
                 </div>
               </form>
+              <p className='text-sm my-3'>Forget Password? <button className='underline text-blue-700' onClick={handleResetPassword}>Reset</button> </p>
             </div>
           </div>
         </div>
