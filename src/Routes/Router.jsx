@@ -9,6 +9,7 @@ import Login from "../Pages/Home/Login/Login/Login";
 import Registration from "../Pages/Home/Login/Registration/Registration";
 import Colleges from "../Pages/NavSection/Colleges/Colleges";
 import CollegeSports from "../Pages/Home/CollegeSports/CollegeSports";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -22,12 +23,12 @@ export const router = createBrowserRouter([
           },
           {
             path: '/college/:id',
-            element: <CollegeDetails></CollegeDetails>,
+            element: <PrivateRoute><CollegeDetails></CollegeDetails></PrivateRoute>,
             loader: () => fetch(`http://localhost:5000/college`)
           },
           {
             path: '/colleges/:id',
-            element: <CollegeSports></CollegeSports>,
+            element: <PrivateRoute><CollegeSports></CollegeSports></PrivateRoute>,
             loader: () => fetch('http://localhost:5000/college')
           },
           {
