@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import signiture from "../../../../assets/signiture.png";
 import { Link } from "react-router-dom";
+import { FaPlusSquare } from "react-icons/fa";
 
 const CollegeCard = () => {
   const [categories, setCategories] = useState([]);
+  const [showAllColleges, setShowAllColleges] = useState(false);
 
   useEffect(() => {
     fetch('http://localhost:5000/college')
@@ -11,6 +13,12 @@ const CollegeCard = () => {
       .then(data => setCategories(data))
       .catch(error => console.log(error))
   }, []);
+
+  //Slice first six data
+  const displayedCategories = showAllColleges ? categories : categories.slice(0, 6);
+  const handleViewMore = () => {
+    setShowAllColleges(true);
+  }
 
   return (
     <div>
@@ -28,7 +36,7 @@ const CollegeCard = () => {
 
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {categories.map((college, index) => (
+            {displayedCategories.map((college, index) => (
               <div key={index} className="col">
                 <div className="card h-full rounded-lg">
                   <div className="card-body flex flex-col justify-center items-center text-black">
@@ -56,6 +64,11 @@ const CollegeCard = () => {
             ))}
           </div>
         </div>
+        {!showAllColleges && (
+        <button className="flex mt-5 mx-5 text-gray-700 hover:text-black" onClick={handleViewMore}>
+          <FaPlusSquare className="mt-1 mx-2"></FaPlusSquare><h2 className="">Check out more universities.</h2>
+        </button>
+      )}
       </div>
     </div>
   );

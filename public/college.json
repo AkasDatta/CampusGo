@@ -76,5 +76,84 @@
     "researchHistory": 1450,
     "researchWorks": "1450 research projects in collaboration with industry partners",
     "rating": 4.8
+  },
+  {
+    "collegeName": "University of Toronto",
+    "collegeImage": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+    "admissionDates": ["2023-08-30 and ", "2023-09-15"],
+    "admissionProcess": "Common Application and supplementary materials",
+    "events": ["Science Fair, ", "Literary Festival, ", "Business Conclave"],
+    "eventsDetails": "Date: October 10th to October 15th",
+    "sports": ["Hockey, ", "Soccer, ", "Tennis"],
+    "sportsCategories": "Men's Hockey, Women's Hockey, Men's Soccer, Women's Soccer, Men's Tennis, Women's Tennis",
+    "researchHistory": 900,
+    "researchWorks": "900 research publications in the last academic year",
+    "rating": 4.7
+  },
+  {
+    "collegeName": "University of Tokyo",
+    "collegeImage": "https://images.unsplash.com/flagged/photo-1554473675-d0904f3cbf38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "admissionDates": ["2023-08-25 and ", "2023-09-10"],
+    "admissionProcess": "Entrance exam and interview",
+    "events": ["Cultural Festival, ", "Research Expo, ", "Tech Conference"],
+    "eventsDetails": "Date: October 20th to October 25th",
+    "sports": ["Basketball, ", "Volleyball, ", "Baseball"],
+    "sportsCategories": "Men's Basketball, Women's Basketball, Men's Volleyball, Women's Volleyball, Men's Baseball, Women's Baseball",
+    "researchHistory": 1200,
+    "researchWorks": "1200 research papers published in renowned journals",
+    "rating": 4.6
+  },
+  {
+    "collegeName": "University of California, Berkeley",
+    "collegeImage": "https://images.unsplash.com/photo-1569447891824-7a1758aa73a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
+    "admissionDates": ["2023-08-20 and ", "2023-09-05"],
+    "admissionProcess": "UC Application and supplemental essays",
+    "events": ["Art Festival, ", "Tech Summit, ", "Literary Meet"],
+    "eventsDetails": "Date: October 10th to October 15th",
+    "sports": ["Football, ", "Swimming, ", "Basketball"],
+    "sportsCategories": "Men's Football, Women's Football, Men's Swimming, Women's Swimming, Men's Basketball, Women's Basketball",
+    "researchHistory": 1100,
+    "researchWorks": "1100 ongoing research projects in collaboration with industry partners",
+    "rating": 4.7
+  },
+  {
+    "collegeName": "California Institute of Technology",
+    "collegeImage": "https://images.unsplash.com/photo-1565246075196-94d3995a0b37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80",
+    "admissionDates": ["2023-09-10 and ", "2023-09-25"],
+    "admissionProcess": "Admission test and interview",
+    "events": ["Science Symposium, ", "Tech Expo, ", "Research Showcase"],
+    "eventsDetails": "Date: October 15th to October 20th",
+    "sports": ["Basketball, ", "Track and Field, ", "Volleyball"],
+    "sportsCategories": "Men's Basketball, Women's Basketball, Men's Track and Field, Women's Track and Field, Men's Volleyball, Women's Volleyball",
+    "researchHistory": 950,
+    "researchWorks": "950 scientific publications in top journals",
+    "rating": 4.8
+  },
+  {
+    "collegeName": "Massachusetts Institute of Technology",
+    "collegeImage": "https://images.unsplash.com/photo-1583373834259-46cc92173cb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+    "admissionDates": ["2023-09-15 and ", "2023-09-30"],
+    "admissionProcess": "Standardized tests and interview",
+    "events": ["Tech Conference, ", "Innovation Fair, ", "Annual Hackathon"],
+    "eventsDetails": "Date: November 25th to November 30th",
+    "sports": ["Soccer, ", "Swimming, ", "Tennis"],
+    "sportsCategories": "Men's Soccer, Women's Soccer, Men's Swimming, Women's Swimming, Men's Tennis, Women's Tennis",
+    "researchHistory": 1300,
+    "researchWorks": "1300 patents filed in the last year",
+    "rating": 4.9
+  },
+  {
+    "collegeName": "University of Melbourne",
+    "collegeImage": "https://images.unsplash.com/photo-1591019052241-e4d95a5dc3fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1225&q=80",
+    "admissionDates": ["2023-09-10 and ", "2023-09-30"],
+    "admissionProcess": "Application and interview",
+    "events": ["Annual Cultural Festival, ", "Research Showcase, ", "Tech Symposium"],
+    "eventsDetails": "Date: October 25th to October 30th",
+    "sports": ["Football, ", "Basketball, ", "Cricket"],
+    "sportsCategories": "Men's Football, Women's Football, Men's Basketball, Women's Basketball, Men's Cricket, Women's Cricket",
+    "researchHistory": 1000,
+    "researchWorks": "1000 ongoing research projects in collaboration with global partners",
+    "rating": 4.6
   }
+  
 ]

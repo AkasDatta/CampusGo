@@ -10,6 +10,7 @@ import Registration from "../Pages/Home/Login/Registration/Registration";
 import Colleges from "../Pages/NavSection/Colleges/Colleges";
 import CollegeSports from "../Pages/Home/CollegeSports/CollegeSports";
 import PrivateRoute from "./PrivateRoute";
+import Admission from "../Pages/NavSection/Admission/Admission";
 
 export const router = createBrowserRouter([
     {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
           {
             path: '/colleges',
             element: <Colleges></Colleges>
+          },
+          {
+            path: '/admission',
+            element: <Admission></Admission>
           }
         ]
       },
