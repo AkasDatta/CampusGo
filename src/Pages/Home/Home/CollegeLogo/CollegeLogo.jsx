@@ -8,7 +8,7 @@ import img6 from "../../../../assets/logo/vlogo6.png";
 const collegeLogo = () => {
     return (
         <div className="mx-auto max-w-screen-xl px-4 py-16 pt-24 sm:px-6 lg:px-8">
-            <h2 className="text-center text-3xl mb-3 text-blue-900">Our University Collaborations</h2>
+            <h2 className="text-center text-3xl mb-3 text-blue-900 font-bold">Our University Collaborations</h2>
             <p className="text-center text-gray-700 mb-10">Creating a vibrant ecosystem of interconnected universities.</p>
 
             <div className="">

@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/">
             <span className="text-2xl font-[Poppins] text-blue-600 font-bold cursor-pointer">
-              campusGo
+              CampusGo
             </span>
           </Link>
 
