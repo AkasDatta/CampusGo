@@ -11,6 +11,7 @@ import Colleges from "../Pages/NavSection/Colleges/Colleges";
 import CollegeSports from "../Pages/Home/CollegeSports/CollegeSports";
 import PrivateRoute from "./PrivateRoute";
 import Admission from "../Pages/NavSection/Admission/Admission";
+import Apply from "../Pages/NavSection/Admission/Apply";
 
 export const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
           {
             path: '/admission',
             element: <Admission></Admission>
+          },
+          {
+            path: '/apply',
+            element: <Apply></Apply>
           }
         ]
       },
