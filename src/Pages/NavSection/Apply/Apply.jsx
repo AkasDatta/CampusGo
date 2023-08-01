@@ -7,7 +7,7 @@ import { useLoaderData } from "react-router-dom";
 
 const Apply = () => {
     const college = useLoaderData(); 
-    const {admissionDates, _id} = college;
+    const {collegeName, _id} = college;
     const { user } = useContext(AuthContext);
     console.log(user);
 
@@ -54,9 +54,11 @@ const Apply = () => {
 
   return (
     <div>
-      <h2 className="text-black">{admissionDates}</h2>
+     <div className="bg-[#0e4062]">
+        <h2 className="mx-auto max-w-screen-xl px-10 py-10 sm:px-8 lg:px-8 text-4xl">{collegeName}</h2>  
+     </div>
       <section className="bg-[#082f49] text-black">
-        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-xl px-4 pb-16 pt-6 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12 mx-2">
               <p className="max-w-xl text-lg text-white">
