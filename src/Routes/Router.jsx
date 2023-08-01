@@ -11,7 +11,8 @@ import Colleges from "../Pages/NavSection/Colleges/Colleges";
 import CollegeSports from "../Pages/Home/CollegeSports/CollegeSports";
 import PrivateRoute from "./PrivateRoute";
 import Admission from "../Pages/NavSection/Admission/Admission";
-import Apply from "../Pages/NavSection/Admission/Apply";
+import Apply from "../Pages/NavSection/Apply/Apply";
+
 
 export const router = createBrowserRouter([
     {
@@ -50,14 +51,10 @@ export const router = createBrowserRouter([
             element: <Admission></Admission>
           },
           {
-            path: '/admission/:id',
+            path: '/apply/:id',
             element: <Apply></Apply>,
-            loader: () => fetch('http://localhost:5000/college'),
-          },
-          // {
-          //   path: '/apply',
-          //   element: <Apply></Apply>
-          // }
+            loader: ({params}) => fetch(`http://localhost:5000/college/${params.id}`)
+          }
         ]
       },
   ]);

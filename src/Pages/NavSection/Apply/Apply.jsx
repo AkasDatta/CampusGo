@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import { useLoaderData } from "react-router-dom";
 
 
 
 const Apply = () => {
+    const college = useLoaderData(); 
+    const {admissionDates, _id} = college;
     const { user } = useContext(AuthContext);
     console.log(user);
 
@@ -51,6 +54,7 @@ const Apply = () => {
 
   return (
     <div>
+      <h2 className="text-black">{admissionDates}</h2>
       <section className="bg-[#082f49] text-black">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
