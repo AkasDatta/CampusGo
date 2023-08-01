@@ -50,9 +50,14 @@ export const router = createBrowserRouter([
             element: <Admission></Admission>
           },
           {
-            path: '/apply',
-            element: <Apply></Apply>
-          }
+            path: '/admission/:id',
+            element: <Apply></Apply>,
+            loader: () => fetch('http://localhost:5000/college'),
+          },
+          // {
+          //   path: '/apply',
+          //   element: <Apply></Apply>
+          // }
         ]
       },
   ]);

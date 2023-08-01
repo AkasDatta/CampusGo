@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import AdmissionCard from "../AdmissionCard/AdmissionCard";
 
 const Admission = () => {
   const [categories, setCategories] = useState([]);
@@ -22,39 +22,14 @@ const Admission = () => {
           </div>
         </div>
 
-        <Link to="/apply" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {categories.map((college, index) => (
-            <div key={index} className="col">
-              <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-                <img
-                  alt="College"
-                  src={college.collegeImage}
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
-
-                <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                  <div className="p-4 sm:p-6">
-                    <time
-                      className="block text-xs text-white/90"
-                    >
-                      {college.admissionDates}
-                    </time>
-
-                    <a href="#">
-                      <h3 className="mt-0.5 text-lg text-white">
-                        {college.collegeName}
-                      </h3>
-                    </a>
-
-                    <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                      {college.description}
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          ))}
-        </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {
+            categories.map(college => <AdmissionCard
+            key={college._id}
+            college={college}
+            ></AdmissionCard>)
+           }
+        </div>
       </div>
     </div>
   );
