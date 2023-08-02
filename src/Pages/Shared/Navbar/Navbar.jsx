@@ -74,11 +74,14 @@ const Navbar = () => {
               Admission
             </Link>
           </li>
-          <li className="mx-2 my-3 md:my-0">
-            <Link to="/" className="text-sm text-gray-600 hover:text-blue-600 duration-600">
-              My College
-            </Link>
-          </li>
+          {user && (
+            <li className="mx-2 my-3 md:my-0">
+              <Link to="/" className="text-sm text-gray-600 hover:text-blue-600 duration-600">
+                My College
+              </Link>
+            </li>
+          )}
+
           <div className="form-control mx-2 sm:my-5">
             <input type="text" placeholder="Search" className="border border-gray-300 rounded-md bg-white w-36 px-2 py-1" />
           </div>

@@ -7,7 +7,7 @@ import { useLoaderData } from "react-router-dom";
 
 const Apply = () => {
     const college = useLoaderData(); 
-    const {collegeName, _id} = college;
+    const {collegeName, collegeImage, admissionDates, description, _id} = college;
     const { user } = useContext(AuthContext);
     console.log(user);
 
@@ -20,24 +20,30 @@ const Apply = () => {
         const subject = form.subject.value;
         const number = form.number.value;
         const address = form.address.value;
-        const birth = form.birth.value;
+        const date = form.date.value;
 
-        const addCollege = {
+        const applys = {
             userName: name,
             userEmail: email,
             photo: photo,
             subject: subject,
             number: number,
             address: address,
-            birth: birth
+            date: date,
+            college: _id,
+            description: description,
+            collegeImage: collegeImage,
+            admissionDates: admissionDates,
+            collegeName: collegeName,
           };
+          console.log(applys);
 
-          fetch("http://localhost:5000/college", {
+          fetch("http://localhost:5000/apply", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
             },
-            body: JSON.stringify(addCollege),
+            body: JSON.stringify(applys),
             })
             .then((res) => res.json())
             .then((data) => {
@@ -90,7 +96,9 @@ const Apply = () => {
                       className="appearance-none block w-full bg-blue-100 text-black border border-blue-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-300"
                       id="grid-first-name"
                       type="text"
+                      name="name"
                       placeholder="Your name"
+                      defaultValue={user?.displayName || ""}
                     />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
@@ -104,6 +112,7 @@ const Apply = () => {
                       className="appearance-none block w-full bg-blue-100 text-black border border-blue-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-300 focus:border-blue-500"
                       id="grid-last-name"
                       type="text"
+                      name="subject"
                       placeholder="Your subject"
                     />
                   </div>
@@ -121,6 +130,7 @@ const Apply = () => {
                       id="grid-first-name"
                       type="email"
                       placeholder="Your Email"
+                      name="email"
                       defaultValue={user?.email || ""}
                       required
                     />
@@ -136,6 +146,7 @@ const Apply = () => {
                       className="appearance-none block w-full bg-blue-100 text-black border border-blue-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-300 focus:border-blue-500"
                       id="grid-last-name"
                       type="number"
+                      name="number"
                       placeholder="Phone"
                     />
                   </div>
@@ -152,6 +163,7 @@ const Apply = () => {
                       className="appearance-none block w-full bg-blue-100 text-black border border-blue-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-300"
                       id="grid-first-name"
                       type="name"
+                      name="address"
                       placeholder="Your address"
                       
                       
@@ -168,6 +180,7 @@ const Apply = () => {
                       className="appearance-none block w-full bg-blue-100 text-black border border-blue-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-300"
                       id="grid-last-name"
                       type="date"
+                      name="date"
                       placeholder="Date of Birth"
                     />
                   </div>
@@ -184,7 +197,7 @@ const Apply = () => {
                       id="grid-last-name"
                       type="text"
                       placeholder="Photo"
-                      defaultValue={user?.photoURL || ""}
+                      name="photo"
                     />
                   </div>
                 <div className="mt-4">
