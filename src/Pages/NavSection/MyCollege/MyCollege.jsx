@@ -11,7 +11,25 @@ const MyCollege = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setApplys(data));
-    }, [])
+    }, [url]);
+
+    const handleDelete = id => {
+        const proceed = confirm('Are you sure you want to delete?');
+        if(proceed){
+            fetch(`http://localhost:5000/apply/${id}`,{
+                method: 'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if(data.deletedCount > 0){
+                    alert('Deleted successfully');
+                    const remaining = applys.filter(apply => apply._id !== id);
+                    setApplys(remaining);
+                }
+            })
+        }
+    }
 
     return (
         <div className="overflow-x-auto">
@@ -55,7 +73,11 @@ const MyCollege = () => {
 
                     <tbody className="divide-y divide-gray-400">
                         {applys.map(apply => (
-                            <MyCollegeRow key={apply._id} apply={apply} />
+                            <MyCollegeRow 
+                                key={apply._id} 
+                                apply={apply}
+                                handleDelete= {handleDelete}
+                            />
                         ))}
                     </tbody>
                 </table>
