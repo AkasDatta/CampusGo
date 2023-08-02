@@ -33,7 +33,7 @@ const Testimonial = () => {
 
   return (
     <section className="bg-gray-100">
-          <h2 className='text-4xl text-[#374151] text-center pt-16 font-bold'>Testimonial</h2>
+          <h2 className='text-4xl text-[#374151] text-center pt-10 font-bold'>Testimonial</h2>
       <div className="mx-auto max-w-[1340px] px-4 pb-16 sm:px-6 sm:pb-24 sm:pt-10 lg:me-0 lg:pe-0 lg:ps-8">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
           <div className="text-center ltr:sm:text-left rtl:sm:text-right mx-auto max-w-screen-xl">

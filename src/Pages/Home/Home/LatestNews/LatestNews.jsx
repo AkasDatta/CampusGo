@@ -3,7 +3,7 @@
 const LatestNews = () => {
     return (
         <div>
-            <div className="bg-white">
+            <div className="bg-blue-100">
                 <div className="mx-auto max-w-screen-xl px-4 pt-16 sm:px-6 lg:px-8">
                     <div className="lg:flex lg:items-start lg:gap-8">
                     <div className="text-blue-700 font-bold text-3xl">
@@ -27,21 +27,17 @@ const LatestNews = () => {
 
                         <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
                             <form className="w-full">
-                                <label htmlFor="UserEmail" className="sr-only"> Email </label>
+                                <label htmlFor="UserEmail" className="sr-only">Email</label>
 
-                                <div
-                                className="border border-gray-200 p-2 focus-within:ring sm:flex sm:items-center sm:gap-4"
-                                >
+                                <div className="border border-gray-400 p-2 focus-within:ring sm:flex sm:items-center sm:gap-4">
                                     <input
                                         type="email"
                                         id="UserEmail"
                                         placeholder="john@rhcp.com"
-                                        className="w-full focus:ring-transparent bg-white"
+                                        className="w-full bg-white focus:ring focus:ring-blue-500 focus:ring-opacity-50"
                                     />
 
-                                    <button
-                                        className="mt-1 w-full bg-blue-400 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-blue-600 sm:mt-0 sm:w-auto sm:shrink-0"
-                                    >
+                                    <button className="mt-1 w-full bg-blue-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-blue-600 sm:mt-0 sm:w-auto sm:shrink-0">
                                         Sign Up
                                     </button>
                                 </div>

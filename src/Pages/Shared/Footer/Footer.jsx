@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="bg-white">
+            <footer className="bg-blue-100">
                 <div className="mx-auto max-w-screen-xl px-4 pt-8 pb-16 sm:px-6 lg:px-8">
                     <div className="lg:flex lg:items-start lg:gap-8">
 
@@ -14,25 +14,25 @@ const Footer = () => {
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                <a href="#" className="text-blue-700 transition hover:opacity-75">
+                                <a href="#" className="text-blue-800 transition hover:opacity-75">
                                     Home
                                 </a>
                                 </li>
 
                                 <li>
-                                <a href="#" className="text-blue-700 transition hover:opacity-75">
+                                <a href="#" className="text-blue-800 transition hover:opacity-75">
                                     Colleges
                                 </a>
                                 </li>
 
                                 <li>
-                                <a href="#" className="text-blue-700 transition hover:opacity-75">
+                                <a href="#" className="text-blue-800 transition hover:opacity-75">
                                     Admission
                                 </a>
                                 </li>
 
                                 <li>
-                                <a href="#" className="text-blue-700 transition hover:opacity-75">
+                                <a href="#" className="text-blue-800 transition hover:opacity-75">
                                     My College
                                 </a>
                                 </li>
@@ -44,24 +44,24 @@ const Footer = () => {
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                <a href="#" className="text-blue-700 transition hover:opacity-75">
+                                <a href="#" className="text-blue-800 transition hover:opacity-75">
                                     Become a Teacher
                                 </a>
                                 </li>
 
                                 <li>
-                                <a href="#" className="text-blue-700 transition hover:opacity-75">
+                                <a href="#" className="text-blue-800 transition hover:opacity-75">
                                     Privacy Policy
                                 </a>
                                 </li>
 
                                 <li>
-                                <a href="#" className="text-blue-700 transition hover:opacity-75">
+                                <a href="#" className="text-blue-800 transition hover:opacity-75">
                                     Blog
                                 </a>
                                 </li>
                                 <li>
-                                <a href="#" className="text-blue-700 transition hover:opacity-75">
+                                <a href="#" className="text-blue-800 transition hover:opacity-70">
                                     Our Teachers
                                 </a>
                                 </li>
@@ -76,13 +76,12 @@ const Footer = () => {
                                     CampusGo is a comprehensive university website providing easy access to academic resources and campus information for students and faculty.</p>
                             </ul>
                         </div>
-
                     </div>
                     </div>
 
-                    <div className="mt-8 border-t border-blue-700 pt-8">
+                    <div className="mt-8 border-t border-blue-800 pt-8">
                     <div className="sm:flex sm:justify-between">
-                        <p className="text-xs text-blue-700">
+                        <p className="text-xs text-black">
                         &copy; 2022. CampusGo. All rights reserved.
                         </p>
 
@@ -90,19 +89,19 @@ const Footer = () => {
                         className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end"
                         >
                         <li>
-                            <a href="#" className="text-blue-700 transition hover:opacity-75">
+                            <a href="#" className="text-blue-800 transition hover:opacity-75">
                             Terms & Conditions
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" className="text-blue-700 transition hover:opacity-75">
+                            <a href="#" className="text-blue-800 transition hover:opacity-75">
                             Privacy Policy
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" className="text-blue-700 transition hover:opacity-75">
+                            <a href="#" className="text-blue-800 transition hover:opacity-75">
                             Cookies
                             </a>
                         </li>
