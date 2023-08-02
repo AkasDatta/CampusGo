@@ -76,7 +76,7 @@ const Navbar = () => {
           </li>
           {user && (
             <li className="mx-2 my-3 md:my-0">
-              <Link to="/" className="text-sm text-gray-600 hover:text-blue-600 duration-600">
+              <Link to="/mycollege" className="text-sm text-gray-600 hover:text-blue-600 duration-600">
                 My College
               </Link>
             </li>
