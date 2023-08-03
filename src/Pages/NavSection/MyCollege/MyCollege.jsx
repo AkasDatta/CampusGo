@@ -56,13 +56,13 @@ const MyCollege = () => {
                                 Subject
                             </th>
                             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                                Date of Birth
-                            </th>
-                            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                                Subject
-                            </th>
-                            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
                                 Address
+                            </th>
+                            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                                Contact
+                            </th>
+                            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                                Date of Birth
                             </th>
                             <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
                                 Remove

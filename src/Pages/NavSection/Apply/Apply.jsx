@@ -52,7 +52,7 @@ const Apply = () => {
                 }
                 Swal.fire(
                 "Thank you!",
-                "A toy added successfully",
+                "Your university added successfully",
                 "success"
                 );
             });
