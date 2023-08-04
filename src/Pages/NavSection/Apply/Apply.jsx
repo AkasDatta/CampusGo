@@ -38,7 +38,7 @@ const Apply = () => {
           };
           console.log(applys);
 
-          fetch("http://localhost:5000/apply", {
+          fetch("https://campus-go-server-side.vercel.app/apply", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

@@ -5,7 +5,7 @@ const Admission = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/college")
+    fetch("https://campus-go-server-side.vercel.app/college")
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch((error) => console.log(error));

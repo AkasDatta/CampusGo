@@ -28,12 +28,12 @@ export const router = createBrowserRouter([
           {
             path: '/college/:id',
             element: <CollegeDetails></CollegeDetails>,
-            loader: () => fetch(`http://localhost:5000/college`)
+            loader: () => fetch(`https://campus-go-server-side.vercel.app/college`)
           },
           {
             path: '/colleges/:id',
             element: <PrivateRoute><CollegeSports></CollegeSports></PrivateRoute>,
-            loader: () => fetch('http://localhost:5000/college')
+            loader: () => fetch('https://campus-go-server-side.vercel.app/college')
           },
           {
             path: '/login',
@@ -54,7 +54,7 @@ export const router = createBrowserRouter([
           {
             path: '/apply/:id',
             element: <Apply></Apply>,
-            loader: ({params}) => fetch(`http://localhost:5000/college/${params.id}`)
+            loader: ({params}) => fetch(`https://campus-go-server-side.vercel.app/college/${params.id}`)
           },
           {
             path: '/mycollege',

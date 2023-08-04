@@ -6,7 +6,7 @@ const MyCollege = () => {
     const {user} = useContext(AuthContext);
     const [applys, setApplys] = useState([]);
 
-    const url = `http://localhost:5000/apply?email=${user?.email}`;
+    const url = `https://campus-go-server-side.vercel.app/apply?email=${user?.email}`;
     useEffect(() => {
         fetch(url)
         .then(res => res.json())
@@ -16,7 +16,7 @@ const MyCollege = () => {
     const handleDelete = id => {
         const proceed = confirm('Are you sure you want to delete?');
         if(proceed){
-            fetch(`http://localhost:5000/apply/${id}`,{
+            fetch(`https://campus-go-server-side.vercel.app/apply/${id}`,{
                 method: 'DELETE'
             })
             .then(res => res.json())
