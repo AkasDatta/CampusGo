@@ -46,7 +46,7 @@ const Testimonial = () => {
             </p>
           </div>
 
-          <div className="-mx-6 lg:col-span-2 lg:mx-0">
+          <div className="-mx-6 lg:col-span-2 lg:mx-0 cursor-pointer">
             <div className="swiper-container overflow-hidden">
               <div className="swiper-wrapper">
                 {/* Slide 1 */}

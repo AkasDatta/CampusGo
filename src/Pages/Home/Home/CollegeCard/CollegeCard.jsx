@@ -34,7 +34,7 @@ const CollegeCard = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="" data-aos="zoom-in">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {displayedCategories.map((college, index) => (
               <div key={index} className="col">

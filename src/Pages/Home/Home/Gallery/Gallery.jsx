@@ -34,7 +34,7 @@ const Gallery = () => {
             <div className="container mx-auto px-4 py-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {images.map((image) => (
-                    <div key={image.id} className="p-2" data-aos="zoom-in" data-aos-duration="500">
+                    <div key={image.id} className="p-2" data-aos="zoom-in" data-aos-duration="1000">
                         <div className="relative">
                         <img src={image.src} alt={image.alt} className="w-full h-auto" />
                         <div className="absolute bottom-0 left-0 right-0 bg-opacity-75 bg-gray-900 p-2 text-white">

@@ -14,22 +14,22 @@ const collegeLogo = () => {
             <div className="">
                 <div >
                 <div className="grid grid-cols-6 md:grid-cols-6 gap-4">
-                    <div className="col-span-1">
+                    <div className="col-span-1" data-aos="zoom-in-right" data-aos-duration="500">
                       <img className="w-36" src={img6} alt="" />
                     </div>
-                    <div className="col-span-1">
+                    <div className="col-span-1" data-aos="zoom-in-right" data-aos-duration="600">
                       <img className="w-36" src={img3} alt="" />
                     </div>
-                    <div className="col-span-1">
+                    <div className="col-span-1" data-aos="zoom-in-right" data-aos-duration="700">
                       <img className="w-36" src={img2} alt="" />
                     </div>
-                    <div className="col-span-1">
+                    <div className="col-span-1" data-aos="zoom-in-right" data-aos-duration="800">
                       <img className="w-36" src={img1} alt="" />
                     </div>
-                    <div className="col-span-1">
+                    <div className="col-span-1" data-aos="zoom-in-right" data-aos-duration="900">
                       <img className="w-36" src={img5} alt="" />
                     </div>
-                    <div className="col-span-1">
+                    <div className="col-span-1" data-aos="zoom-in-right" data-aos-duration="1000">
                       <img className="w-36" src={img4} alt="" />
                     </div>
                 

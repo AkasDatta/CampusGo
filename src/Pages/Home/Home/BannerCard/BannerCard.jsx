@@ -8,7 +8,10 @@ const BannerCard = () => {
       <div className="shadow-lg">
         <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="text-black grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="text-black grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
+            data-aos-offset="0">
               <div className="col-span-1">
                 <IoLibrary className="lg:text-6xl sm:text-4xl mt-3 mx-2"></IoLibrary>
               </div>
@@ -19,7 +22,11 @@ const BannerCard = () => {
                 </p>
               </div>
             </div>
-            <div className="text-black grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="text-black grid grid-cols-2 md:grid-cols-4 gap-4"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
               <div className="col-span-1">
                 <IoEarthSharp className="lg:text-6xl sm:text-4xl mt-3 mx-2"></IoEarthSharp>
               </div>
@@ -30,7 +37,11 @@ const BannerCard = () => {
                 </p>
               </div>
             </div>
-            <div className="text-black grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="text-black grid grid-cols-2 md:grid-cols-4 gap-4"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="400"
+            data-aos-offset="0">
               <div className="col-span-1">
                 <MdOutlineLibraryBooks className="lg:text-6xl sm:text-4xl mt-3 mx-2"></MdOutlineLibraryBooks>
               </div>

@@ -45,7 +45,7 @@ const Banner = () => {
       >
         <div className="dark-overlay">
           <div className="banner-inner mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-            <div className="lg:me-96 max-w-xlt">
+            <div className="lg:me-96 max-w-xlt" data-aos="zoom-in">
               <h1
                 className="font-bold text-6xl text-white mb-5"
               >
