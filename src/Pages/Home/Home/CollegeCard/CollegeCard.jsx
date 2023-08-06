@@ -14,8 +14,9 @@ const CollegeCard = () => {
       .catch(error => console.log(error))
   }, []);
 
-  //Slice first six data
-  const displayedCategories = showAllColleges ? categories : categories?.slice(0, 6) || [];
+  // Slice first six data
+  const displayedCategories = showAllColleges ? categories : (categories ? categories.slice(0, 6) : []);
+
   const handleViewMore = () => {
     setShowAllColleges(true);
   }
