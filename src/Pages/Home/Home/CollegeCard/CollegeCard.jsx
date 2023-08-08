@@ -9,10 +9,20 @@ const CollegeCard = () => {
 
   useEffect(() => {
     fetch('https://campus-go-server-side.vercel.app/college')
-      .then(res => res.json())
-      .then(data => setCategories(data))
-      .catch(error => console.log(error))
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return res.json();
+      })
+      .then(data => {
+        setCategories(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
   }, []);
+  
 
   // Slice first six data
   const displayedCategories = showAllColleges ? categories : (categories ? categories.slice(0, 6) : []);
