@@ -6,6 +6,7 @@ import Research from "./Research/Research";
 import Testimonial from "./Testimonial/Testimonial";
 import CollegeLogo from "./CollegeLogo/CollegeLogo";
 import LatestNews from "./LatestNews/LatestNews";
+import Overview from "./Overview/Overview";
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
             <BannerCard></BannerCard>
             <CollegeCard></CollegeCard>
             <Gallery></Gallery>
+            <Overview></Overview>
             <Research></Research>
             <Testimonial></Testimonial>
             <CollegeLogo></CollegeLogo>
