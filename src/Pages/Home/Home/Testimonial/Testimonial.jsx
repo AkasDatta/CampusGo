@@ -33,10 +33,14 @@ const Testimonial = () => {
 
   return (
     <section className="bg-gray-100">
-          <h2 className='text-4xl text-[#374151] text-center pt-10 font-bold'>Testimonial</h2>
+          <h2 className='text-4xl text-[#374151] text-center pt-10 font-bold'  data-aos="zoom-in">Testimonial</h2>
       <div className="mx-auto max-w-[1340px] px-4 pb-16 sm:px-6 sm:pb-24 sm:pt-10 lg:me-0 lg:pe-0 lg:ps-8">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
-          <div className="text-center ltr:sm:text-left rtl:sm:text-right mx-auto max-w-screen-xl">
+          <div className="text-center ltr:sm:text-left rtl:sm:text-right mx-auto max-w-screen-xl" 
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-offset="0">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl text-gray-800">
             Don't just take our word for it. Read reviews from our clients.
             </h2>
@@ -51,7 +55,10 @@ const Testimonial = () => {
               <div className="swiper-wrapper">
                 {/* Slide 1 */}
                 <div className="swiper-slide">
-                  <blockquote className="flex h-full flex-col justify-between bg-white p-12">
+                  <blockquote className="flex h-full flex-col justify-between bg-white p-12" data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0">
                     <div>
                       <div className="flex gap-0.5 text-green-500">
                        <img className='w-32' src={rating2} alt="" />
@@ -71,7 +78,10 @@ const Testimonial = () => {
                 </div>
 
                 {/* Slide 2 */}
-                <div className="swiper-slide">
+                <div className="swiper-slide" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="400"
+                data-aos-offset="0">
                   <blockquote className="flex h-full flex-col justify-between bg-white p-12">
                     <div>
                       <div className="flex gap-0.5 text-green-500">
@@ -92,7 +102,10 @@ const Testimonial = () => {
                 </div>
 
                 {/* Slide 3 */}
-                <div className="swiper-slide">
+                <div className="swiper-slide" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="500"
+                data-aos-offset="0">
                   <blockquote className="flex h-full flex-col justify-between bg-white p-12">
                     <div>
                       <div className="flex gap-0.5 text-green-500">

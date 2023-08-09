@@ -17,9 +17,9 @@ const Research = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 cursor-pointer">
             {research.map((researchpaper, index) => (
               <div key={index} className="col">
-                <div href="#" className="group relative block bg-black">
+                <div href="#" className="group relative block bg-black" data-aos="zoom-in" data-aos-duration="1000">
                 <img
-                    src={researchpaper.src} alt={researchpaper.alt} // Fix: Use parentheses () instead of curly braces {}
+                    src={researchpaper.src} alt={researchpaper.alt}
                     className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
 
