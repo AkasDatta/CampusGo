@@ -53,7 +53,7 @@ export const router = createBrowserRouter([
           },
           {
             path: '/apply/:id',
-            element: <Apply></Apply>,
+            element: <PrivateRoute><Apply></Apply></PrivateRoute>,
             loader: ({params}) => fetch(`https://campus-go-server-side.vercel.app/college/${params.id}`)
           },
           {

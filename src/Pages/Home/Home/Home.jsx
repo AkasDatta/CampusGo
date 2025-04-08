@@ -8,8 +8,6 @@ import CollegeLogo from "./CollegeLogo/CollegeLogo";
 import LatestNews from "./LatestNews/LatestNews";
 import Overview from "./Overview/Overview";
 
-
-
 const Home = () => {
     return (
         <div>
